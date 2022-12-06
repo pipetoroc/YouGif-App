@@ -1,23 +1,16 @@
-import { useState } from 'react'
-import './App.css'
-import { useEffect } from 'react'
-import { getGifts } from './services/get-gifs'
-
+import React, {useState} from "react";
+import "./App.css";
+import ListOfGifts from "./components/ListOfGifs";
 
 function App() {
-  const [gifts, setGifts] = useState([])
-
-  useEffect (function (){
-    getGifts().then(gifts => setGifts(gifts))
-  }, [])
+  const [keyword, setKeyWord] = useState('amor')
 
   return (
     <div className="App">
-      {
-        gifts.map(singleGifts => <img src={singleGifts} />)
-      }
+      <button onClick={()=>setKeyWord('angel')}> Cambiar keyword</button>
+      <ListOfGifts keyword={keyword}/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
