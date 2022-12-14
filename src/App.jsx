@@ -1,14 +1,18 @@
-import React, {useState} from "react";
+import React,{useState} from "react";
 import "./App.css";
-import ListOfGifts from "./components/ListOfGifs";
+import ListOfGifts from "./components/ListOfGifs/ListOfGifs";
+import Input from "./components/Input/Input";
+// import Button from "./components/Button/Button";
 
 function App() {
-  const [keyword, setKeyWord] = useState('amor')
+  const [keyword, setKeyword] = useState('panda')
 
   return (
     <div className="App">
-      <button onClick={()=>setKeyWord('angel')}> Cambiar keyword</button>
-      <ListOfGifts keyword={keyword}/>
+        <Input/>
+        {/* <Button keyword={keyword} /> */}
+        <button className="btn" onClick={()=>setKeyword('angel')}> Cambiar keyword</button>
+        <ListOfGifts keyword={keyword}/>
     </div>
   );
 }
