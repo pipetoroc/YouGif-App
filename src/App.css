@@ -1,4 +1,4 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,11 +6,23 @@
 
 html{
   font-size: 62.5%;
-}
+} */
 .App{
   margin: 0 auto;
 }
 .gifs{
   display: flex;
   flex-wrap: wrap;
+}
+h1{
+  font-size: 4rem;
+}
+a{
+  font-size: 2.4rem;
+  color: salmon;
+  width: 100%;
+  text-decoration: none;
+}
+a:hover{
+  color: blueviolet;
 }
