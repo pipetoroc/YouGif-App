@@ -1,7 +1,7 @@
-import React from "react";
-import { Gif } from "../Gif/Gif";
+import React from 'react'
+import { Gif } from '../Gif/Gif'
 
-function ListOfGifs({ gifs }) {
+function ListOfGifs ({ gifs }) {
   return (
     <div>
       {gifs.map(({ id, title, url }) => (
@@ -13,7 +13,7 @@ function ListOfGifs({ gifs }) {
         />
       ))}
     </div>
-  );
+  )
 }
 
-export default ListOfGifs;
+export default ListOfGifs

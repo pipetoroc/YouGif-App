@@ -1,15 +1,15 @@
-import React from "react";
-import "./App.css";
-import Home from "/src/pages/Home/index"
-import SearchResult from "./pages/SearchResult/SearchResult"
-import Detail from "/src/pages/Detail/Detail"
+import React from 'react'
+import './App.css'
+import Home from './pages/Home/index'
+import SearchResult from './pages/SearchResult/SearchResult'
+import Detail from './pages/Detail/Detail'
 
-import { Route } from "wouter";
+import { Route } from 'wouter'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <section className="App-content">
+    <div className='App'>
+      <section className='App-content'>
         <h1>Aplicacion de gifs</h1>
 
         <Route
@@ -26,7 +26,7 @@ function App() {
         />
       </section>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

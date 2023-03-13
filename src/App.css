@@ -9,6 +9,14 @@ html{
 } */
 .App{
   margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.App-content{
+ display: grid; 
+ justify-content: center;
+ align-items: center;
 }
 .gifs{
   display: flex;

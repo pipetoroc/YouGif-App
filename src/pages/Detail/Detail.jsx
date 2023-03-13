@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Detail({params}) {
+function Detail ({ params }) {
   console.log(params)
   return (
     <h1>Gif con id {params.id}</h1>

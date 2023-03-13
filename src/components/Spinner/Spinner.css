@@ -1,0 +1,30 @@
+.Spinner{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+  margin: 0 auto;
+}
+.Spinner::before, .Spinner::after{
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+}
+.Spinner::before{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, #f0c 0%, #80f 100%);
+}
+.Spinner::after{
+  width: 85%;
+  height: 85%;
+  background-color: #222;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+@keyframes spin{
+  to {
+    transform: rotate(360deg);
+  }
+}
